@@ -1,4 +1,4 @@
-![CodeShare](/CodeShare/Resources/drawable/logo1.png ?raw=true "Logo" ){:height="700px" width="400px"}
+![CodeShare](/CodeShare/Resources/drawable/logo1.png ?raw=true "Logo" )
 # CodeShareXamarinAndroid
 
 ## CodeShare is an android appliation used to share the Code, Project, Snippets, Project Documentation, Screenshots with other users.
