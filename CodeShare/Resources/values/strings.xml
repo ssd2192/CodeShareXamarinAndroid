@@ -1,0 +1,13 @@
+<resources>
+  <string name="app_name">CodeShare</string>
+  <string name="action_settings">Settings</string>
+
+  <!--My string values CodeShareTeam-->
+  <string name="sign_in_title">Sign In</string>
+  <string name="sign_up_title">Sign Up</string>
+
+  <string name="button_sign_in">Sign In</string>
+  <string name="button_sign_up">Sign Up</string>
+  <string name="button_back">Back</string>
+
+</resources>
