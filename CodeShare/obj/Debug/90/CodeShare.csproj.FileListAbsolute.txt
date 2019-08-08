@@ -333,3 +333,5 @@ D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\Cod
 D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\assets\System.Threading.Tasks.dll
 D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\src\md5f8fd69f70649989e721ca134ca5c742d\AddCodeActivity.java
 D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\res\layout\celllayout.xml
+D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\res\layout\activity_code_view.xml
+D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\src\md5f8fd69f70649989e721ca134ca5c742d\CodeViewActivity.java

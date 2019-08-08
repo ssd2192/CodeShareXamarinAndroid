@@ -20,15 +20,7 @@ namespace CodeShare
 
 
         public static string tableNameCode = "Code";
-        //public string nameFiled = "names";
-        //public string id = "id";
-
-        // User Table Content and crete query
-        //public static string emailValue = "email", nameValue = "name", passwordValue = "password", ageValue = "age";
-
-        //public string createTableUser = string.Format("Create table {0} ({1} text Primary Key, {2} text, {3} text, {4} Integer)"
-        //    , tableName, emailValue, passwordValue, nameValue, ageValue);
-
+       
         // Code Table Content and crete query
 
         public static string emailValue="email", titleValue = "title", linkValue = "link", discriptionValue = "discription";
@@ -74,7 +66,7 @@ namespace CodeShare
         public void insertValue(Context context, string emailValue, string titleValue, string linkValue, string discriptionValue)
         {
             connectionObj = new DataConnection(context).ReadableDatabase;
-            string insertStm = string.Format("Insert into {0} values ( '{1}', '{2}', '{3}', '{4}');"
+            string insertStm = string.Format("Insert into {0} ( email, title, link, discription ) values ( '{1}', '{2}', '{3}', '{4}');"
             , tableNameCode, emailValue, titleValue, linkValue, discriptionValue);
 
             Console.WriteLine("My SQL  Insert STM \n  \n" + insertStm);

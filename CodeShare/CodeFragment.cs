@@ -18,8 +18,8 @@ namespace CodeShare
     public class CodeFragment : Fragment
     {
 
-        string[] movieArray = { "A-Moive", "B-Moive",
-                "C-Moive", "D-Moive", "E-Moive", "F - Moive", "G  - Moive", "H  - Moive", "I  - Moive"};
+        //string[] movieArray = { "A-Moive", "B-Moive",
+        //        "C-Moive", "D-Moive", "E-Moive", "F - Moive", "G  - Moive", "H  - Moive", "I  - Moive"};
 
         public string email;
         public string myName;
@@ -29,10 +29,17 @@ namespace CodeShare
 
         ArrayAdapter myAdapterarray;
         ArrayList listCode = new ArrayList();
-        
+        ListView myList;
+
+
         public static string codeTitle = "title";
         public static string codelink = "link";
         public static string codeDesc = "discription";
+        public static string codeID = "id";
+
+        string code_title, code_link, code_desc = "";
+        string code_id = "";
+
 
 
         public CodeFragment(string email)
@@ -54,7 +61,7 @@ namespace CodeShare
             // Use this to return your custom view for this Fragment
 
             View myView = inflater.Inflate(Resource.Layout.activity_code_tab, container, false);
-            ListView myList = myView.FindViewById<ListView>(Resource.Id.listView1);
+            myList = myView.FindViewById<ListView>(Resource.Id.listView1);
 
             TextView mytext = myView.FindViewById<TextView>(Resource.Id.textView1);
             SearchView mySearch = myView.FindViewById<SearchView>(Resource.Id.searchView1);
@@ -67,7 +74,7 @@ namespace CodeShare
             // Code to display Code List
             
             ICursor myresult = cdm.PrintCodeList(this.Activity);
-            string title, link, disc = "";
+            
 
             listCode.Clear();
 
@@ -75,9 +82,10 @@ namespace CodeShare
             {
                 //myEmail = myresult.GetString(myresult.GetColumnIndexOrThrow(emailValue));
                 // working code
-                title = myresult.GetString(myresult.GetColumnIndexOrThrow(codeTitle));
-                link = myresult.GetString(myresult.GetColumnIndexOrThrow(codelink));
-                disc = myresult.GetString(myresult.GetColumnIndexOrThrow(codeDesc));
+                code_id = myresult.GetString(myresult.GetColumnIndexOrThrow(codeID));
+                code_title = myresult.GetString(myresult.GetColumnIndexOrThrow(codeTitle));
+                code_link = myresult.GetString(myresult.GetColumnIndexOrThrow(codelink));
+                code_desc = myresult.GetString(myresult.GetColumnIndexOrThrow(codeDesc));
 
                 listCode.Add(myresult.GetString(myresult.GetColumnIndexOrThrow(codeTitle)));
 
@@ -87,7 +95,11 @@ namespace CodeShare
             myList.Adapter = myAdapterarray;
             myList.ItemClick += MyList_ItemClick;
             mySearch.QueryTextChange += MySearch_QueryTextChange;
+
+            Console.WriteLine("Code Id from Database " + code_id);
             return myView;
+
+
 
             
 
@@ -101,18 +113,30 @@ namespace CodeShare
 
         private void MySearch_QueryTextChange(object sender, SearchView.QueryTextChangeEventArgs e)
         {
-            
+            if (string.IsNullOrWhiteSpace(e.NewText))
+            {
+                myAdapterarray = new ArrayAdapter(this.Activity, Android.Resource.Layout.SimpleListItem1, listCode);
+                myList.Adapter = myAdapterarray;
+            }
+            else
+            {
+                var mySearchValue = e.NewText;
+                myAdapterarray.Filter.InvokeFilter(mySearchValue);
+            }
+
         }
 
         private void MyList_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
             var index = e.Position;
-            string myvalue = (string)listCode[index];
+            code_title = (string)listCode[index];
 
             Intent newScreen = new Intent(this.Activity, typeof(CodeViewActivity));
+            newScreen.PutExtra("code_id", code_id);
             newScreen.PutExtra("email", email);
-            newScreen.PutExtra("title", myvalue);
-            //newScreen.PutExtra("desc", desc);
+            newScreen.PutExtra("code_title", code_title);
+            newScreen.PutExtra("code_link", code_link);
+            newScreen.PutExtra("code_desc", code_desc);
             StartActivity(newScreen);
 
 
