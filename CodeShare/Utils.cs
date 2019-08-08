@@ -25,7 +25,7 @@ namespace CodeShare
             alert.SetTitle(title);
             alert.SetMessage(message);
 
-            if (title == "Error")
+            if (title == "Error" || title == "Update" || title == "Code Added Successfull")
             {
                 alert.SetPositiveButton("OK", alertOKButton);
             }
@@ -33,7 +33,7 @@ namespace CodeShare
             {
                 alert.SetPositiveButton("OK", alertOKButtonRegister);
             }
-
+            
             alert.SetNegativeButton("Cancel", alertOKButton);
             Dialog myDialog = alert.Create();
             myDialog.Show();

@@ -26,7 +26,7 @@ namespace CodeShare
         // User Table Content and crete query
         public static string emailValue = "email", nameValue = "name", passwordValue = "password", ageValue = "age";
 
-        public string createTableUser = string.Format("Create table {0} ({1} text Primary Key, {2} text, {3} text, {4} Integer)"
+        public string createTableUser = string.Format("Create table {0} ({1} text Primary Key, {2} text, {3} text, {4} Integer);"
             , tableName, emailValue, passwordValue, nameValue, ageValue);
 
         public string DeleteQuery = "DROP TABLE IF EXISTS " + tableName;
@@ -49,6 +49,7 @@ namespace CodeShare
             return flag;
         }
 
+        //Insert into User table ***Sign up page insert function ***
         public void insertValue(Context context, string emailValue, string passwordValue, string nameValue, string ageValue)
         {
             string insertStm = string.Format("Insert into {0} values ( '{1}', '{2}', '{3}', {4});",
@@ -61,8 +62,8 @@ namespace CodeShare
         }
 
 
-
-        public ICursor Print2Welcome(Context context ,string emailid, string passwordid)
+        //Print values from database to account fragment with specific user email
+        public ICursor Print2Account(Context context ,string emailid, string passwordid)
         {
             connectionObj  = new DataConnection(context).ReadableDatabase;
 
@@ -74,6 +75,16 @@ namespace CodeShare
             return myresut;
         }
 
+
+        //My Update Function to update user data
+        public void updateValue(Context context, string password, string name, int age)
+        {
+            connectionObj = new DataConnection(context).WritableDatabase;
+            //{0} tableName {1}nameValue {2} nameid {3} ageValue {4}ageid {5} emailValue {6}emailid
+
+            string updateStm = string.Format("Update {0} Set {1} = '{2}', {3} = '{4}' where {5} = {6} ", tableName, passwordValue, password, nameValue, name, ageValue, age);
+            connectionObj.ExecSQL(updateStm);
+        }
 
 
 

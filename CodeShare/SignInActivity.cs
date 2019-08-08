@@ -73,27 +73,28 @@ namespace CodeShare
             {
                 //working code but not usable here
 
-                //ICursor myresult = udm.Print2Welcome(this, email, password);
-                //var myEmail = "";
-                //var myName = "";
-                //var myAge = 0;
-                //var myPassword = "";
+                ICursor myresult = udm.Print2Account(this, email, password);
+                var myEmail = "";
+                var myName = "";
+                var myAge = 0;
+                var myPassword = "";
 
-                //while (myresult.MoveToNext())
-                //{
-                //    myEmail = myresult.GetString(myresult.GetColumnIndexOrThrow(emailValue));
-                //    myName = myresult.GetString(myresult.GetColumnIndexOrThrow(nameValue));
-                //    myAge = myresult.GetInt(myresult.GetColumnIndexOrThrow(ageValue));
-                //    myPassword = myresult.GetString(myresult.GetColumnIndexOrThrow(passwordValue));
-                //}
+                while (myresult.MoveToNext())
+                {
+                   myEmail = myresult.GetString(myresult.GetColumnIndexOrThrow(emailValue));
+                   myName = myresult.GetString(myresult.GetColumnIndexOrThrow(nameValue));
+                   myAge = myresult.GetInt(myresult.GetColumnIndexOrThrow(ageValue));
+                   myPassword = myresult.GetString(myresult.GetColumnIndexOrThrow(passwordValue));
+                }
 
                 // login commented ablve is correct
 
-                var activity2 = new Intent(this, typeof(MainTabActivity));
-                //activity2.PutExtra("mail", myEmail);
-                //activity2.PutExtra("name", myName);
-                //activity2.PutExtra("age", myAge);
-                StartActivity(activity2);
+                var newScreen = new Intent(this, typeof(MainTabActivity));
+                newScreen.PutExtra("mail", myEmail);
+                newScreen.PutExtra("name", myName);
+                newScreen.PutExtra("age", myAge);
+                newScreen.PutExtra("password", myPassword);
+                StartActivity(newScreen);
             }
         }
     }

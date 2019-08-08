@@ -24,6 +24,13 @@ public class AccountFragment
 			mono.android.TypeManager.Activate ("CodeShare.AccountFragment, CodeShare", "", this, new java.lang.Object[] {  });
 	}
 
+	public AccountFragment (java.lang.String p0, java.lang.String p1, java.lang.String p2, int p3)
+	{
+		super ();
+		if (getClass () == AccountFragment.class)
+			mono.android.TypeManager.Activate ("CodeShare.AccountFragment, CodeShare", "System.String, mscorlib:System.String, mscorlib:System.String, mscorlib:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2, p3 });
+	}
+
 
 	public void onCreate (android.os.Bundle p0)
 	{

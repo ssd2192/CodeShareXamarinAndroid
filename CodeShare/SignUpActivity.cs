@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -9,6 +10,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using CodeShare.Models;
 
 namespace CodeShare
 {
@@ -21,11 +23,19 @@ namespace CodeShare
         DataConnection myDB;
         UserDataModel udm = new UserDataModel();
 
+        // *** Updated Code ***
+        //private UserContext userDB;
+
+
         public static string emailValue = "email", nameValue = "name", passwordValue = "password", ageValue = "age";
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+            // *** Updated Code ***
+            //userDB = new UserContext(Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.LocalApplicationData), "code.db3"));
+
 
             SetContentView(Resource.Layout.activity_sign_up);
             // Create your application here
@@ -48,6 +58,20 @@ namespace CodeShare
 
         }
 
+        //private void Btn_sign_up_Click(object sender, EventArgs e)
+        //{
+        //    var user = new User
+        //    {
+        //        Email = et_email.Text,
+        //        Password = et_password.Text,
+        //        Name = et_name.Text,
+        //        Age = Convert.ToInt32(et_age.Text)
+
+        //    };
+        //}
+
+
+        // Working Code
         private void Btn_sign_up_Click(object sender, EventArgs e)
         {
             var emailValue = et_email.Text;
@@ -58,8 +82,8 @@ namespace CodeShare
 
             if (emailValue.Trim().Equals("") || emailValue.Length < 0 ||
                 passwordValue.Trim().Equals("") || passwordValue.Length < 0 ||
-                nameValue.Trim().Equals("") || nameValue.Length<0||
-                ageValue.Trim().Equals("") || ageValue.Length <0 )
+                nameValue.Trim().Equals("") || nameValue.Length < 0 ||
+                ageValue.Trim().Equals("") || ageValue.Length < 0)
             {
                 new Utils().alertFunction("Error", "Please Complete all the fields", this);
 
@@ -73,7 +97,7 @@ namespace CodeShare
                 }
                 else
                 {
-                    udm.insertValue(this, emailValue, passwordValue,nameValue, ageValue);
+                    udm.insertValue(this, emailValue, passwordValue, nameValue, ageValue);
 
                     new Utils().alertFunction("Registration Successfull", "Click Ok to Login", this);
                 }
@@ -81,5 +105,9 @@ namespace CodeShare
 
 
         }
+
+
+
+
     }
 }

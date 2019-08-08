@@ -60,11 +60,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountFragment.cs" />
+    <Compile Include="AddCodeActivity.cs" />
+    <Compile Include="CodeDataModel.cs" />
     <Compile Include="CodeFragment.cs" />
+    <Compile Include="CodeViewActivity.cs" />
     <Compile Include="DataConnection.cs" />
     <Compile Include="DbHelper.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainTabActivity.cs" />
+    <Compile Include="Models\Code.cs" />
+    <Compile Include="Models\Composition.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="MyCodeFragment.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -105,6 +111,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.5.231</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.1" />
@@ -133,6 +142,26 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\activity_code_tab.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_account_tab.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_add_code.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\CellLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_code_view.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

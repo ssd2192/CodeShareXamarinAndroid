@@ -10,4 +10,7 @@
   <string name="button_sign_up">Sign Up</string>
   <string name="button_back">Back</string>
 
+  <string name="account_title">Account</string>
+  <string name="edit_profile">Edit Profile</string>
+
 </resources>

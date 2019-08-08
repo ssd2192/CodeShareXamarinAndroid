@@ -27,6 +27,11 @@ namespace CodeShare
             base.OnCreate(savedInstanceState);
             //SetContentView(Resource.Layout.activity_tab);
 
+            string emailFromSignIn = Intent.GetStringExtra("mail");
+            string passwordFromSignIn = Intent.GetStringExtra("password");
+            string nameFromSignIn = Intent.GetStringExtra("name");
+            var ageFsromSignIn = Intent.GetIntExtra("age", 0);
+
             RequestWindowFeature(WindowFeatures.ActionBar);
 
             //enable navigation mode to support tab layout
@@ -42,9 +47,9 @@ namespace CodeShare
             // Create your application here
             _fragmentsArray = new Fragment[]
          {
-            new CodeFragment(),
+            new CodeFragment(emailFromSignIn),
             new MyCodeFragment(),
-            new AccountFragment()
+            new AccountFragment(emailFromSignIn,passwordFromSignIn,nameFromSignIn,ageFsromSignIn)
          };
 
 
