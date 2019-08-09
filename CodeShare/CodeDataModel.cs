@@ -23,10 +23,10 @@ namespace CodeShare
        
         // Code Table Content and crete query
 
-        public static string emailValue="email", titleValue = "title", linkValue = "link", discriptionValue = "discription";
+        //public static string emailValue="email", titleValue = "title", linkValue = "link", discriptionValue = "discription", image_uri = "image";
 
-        public string createTableCode = string.Format("Create table {0} ({1} text, {2} text, {3} text, {4} text);"
-            , tableNameCode, emailValue, titleValue, linkValue, discriptionValue);
+        //public string createTableCode = string.Format("Create table {0} ({1} text, {2} text, {3} text, {4} text, {5} text);"
+        //    , tableNameCode, emailValue, titleValue, linkValue, discriptionValue, image_uri);
 
 
         public string DeleteQuery = "DROP TABLE IF EXISTS " + tableNameCode;
@@ -63,11 +63,11 @@ namespace CodeShare
 
         // Insert into code Table
 
-        public void insertValue(Context context, string emailValue, string titleValue, string linkValue, string discriptionValue)
+        public void insertValue(Context context, string emailValue, string titleValue, string linkValue, string discriptionValue, string image_uri )
         {
             connectionObj = new DataConnection(context).ReadableDatabase;
-            string insertStm = string.Format("Insert into {0} ( email, title, link, discription ) values ( '{1}', '{2}', '{3}', '{4}');"
-            , tableNameCode, emailValue, titleValue, linkValue, discriptionValue);
+            string insertStm = string.Format("Insert into {0} ( email, title, link, discription, image ) values ( '{1}', '{2}', '{3}', '{4}', '{5}');"
+            , tableNameCode, emailValue, titleValue, linkValue, discriptionValue, image_uri);
 
             Console.WriteLine("My SQL  Insert STM \n  \n" + insertStm);
 
@@ -84,6 +84,18 @@ namespace CodeShare
         {
             connectionObj = new DataConnection(context).ReadableDatabase;
             string selectCodeStm = string.Format("Select * from {0} ", tableNameCode);
+
+            ICursor myresult = connectionObj.RawQuery(selectCodeStm, null);
+
+            return myresult;
+        }
+
+        //print image
+        string codeID = "id";
+        public ICursor PrintCodeListImage(Context context, int codeId)
+        {
+            connectionObj = new DataConnection(context).ReadableDatabase;
+            string selectCodeStm = string.Format("Select * from {0} where {1} = {2} ", tableNameCode, codeID, codeId );
 
             ICursor myresult = connectionObj.RawQuery(selectCodeStm, null);
 

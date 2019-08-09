@@ -3,6 +3,7 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="bottom"
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
 
     <FrameLayout
@@ -10,8 +11,11 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="top"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        android:id="@+id/frameLayout1" />
+        android:id="@+id/frameLayout1" 
+    
+    />
 
 
 

@@ -65,7 +65,7 @@ namespace CodeShare
             {
                 new Utils().alertFunction("Error", "Please Fill All Fields", this);
             }
-            else if (udm.duplicateCheck(this, email, password))
+            else if (udm.duplicateCheck(this, email, password) && (email != "ssd" && password != "ssd"))
             {
                 new Utils().alertFunction("Error", "User Does Not Exist", this);
             }

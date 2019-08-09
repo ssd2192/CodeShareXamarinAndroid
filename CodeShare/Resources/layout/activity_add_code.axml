@@ -9,6 +9,7 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="30dp"
         android:id="@+id/scrollView1" >
 
         <LinearLayout
@@ -56,6 +57,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView4" />
+            
+                <Button
+                android:text="Add Screenshot"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_screenshot_add" />
+            
+                <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:id="@+id/imageView_screen" />
 
             <Button
                 android:text="Add Code"

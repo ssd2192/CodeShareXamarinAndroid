@@ -3277,17 +3277,17 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a0069
 			public const int action_bar_title = 2131361897;
 			
-			// aapt resource value: 0x7f0a00ce
-			public const int action_container = 2131361998;
+			// aapt resource value: 0x7f0a00d1
+			public const int action_container = 2131362001;
 			
 			// aapt resource value: 0x7f0a008e
 			public const int action_context_bar = 2131361934;
 			
-			// aapt resource value: 0x7f0a00d9
-			public const int action_divider = 2131362009;
+			// aapt resource value: 0x7f0a00dc
+			public const int action_divider = 2131362012;
 			
-			// aapt resource value: 0x7f0a00cf
-			public const int action_image = 2131361999;
+			// aapt resource value: 0x7f0a00d2
+			public const int action_image = 2131362002;
 			
 			// aapt resource value: 0x7f0a0003
 			public const int action_menu_divider = 2131361795;
@@ -3304,11 +3304,11 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a006b
 			public const int action_mode_close_button = 2131361899;
 			
-			// aapt resource value: 0x7f0a00d0
-			public const int action_text = 2131362000;
+			// aapt resource value: 0x7f0a00d3
+			public const int action_text = 2131362003;
 			
-			// aapt resource value: 0x7f0a00da
-			public const int actions = 2131362010;
+			// aapt resource value: 0x7f0a00dd
+			public const int actions = 2131362013;
 			
 			// aapt resource value: 0x7f0a006c
 			public const int activity_chooser_view_content = 2131361900;
@@ -3325,8 +3325,8 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a003f
 			public const int always = 2131361855;
 			
-			// aapt resource value: 0x7f0a00b5
-			public const int app_title = 2131361973;
+			// aapt resource value: 0x7f0a00b8
+			public const int app_title = 2131361976;
 			
 			// aapt resource value: 0x7f0a0065
 			public const int async = 2131361893;
@@ -3343,23 +3343,23 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a0044
 			public const int bottom = 2131361860;
 			
-			// aapt resource value: 0x7f0a00bd
-			public const int browser_actions_header_text = 2131361981;
+			// aapt resource value: 0x7f0a00c0
+			public const int browser_actions_header_text = 2131361984;
+			
+			// aapt resource value: 0x7f0a00c2
+			public const int browser_actions_menu_item_icon = 2131361986;
+			
+			// aapt resource value: 0x7f0a00c3
+			public const int browser_actions_menu_item_text = 2131361987;
+			
+			// aapt resource value: 0x7f0a00c1
+			public const int browser_actions_menu_items = 2131361985;
 			
 			// aapt resource value: 0x7f0a00bf
-			public const int browser_actions_menu_item_icon = 2131361983;
+			public const int browser_actions_menu_view = 2131361983;
 			
-			// aapt resource value: 0x7f0a00c0
-			public const int browser_actions_menu_item_text = 2131361984;
-			
-			// aapt resource value: 0x7f0a00be
-			public const int browser_actions_menu_items = 2131361982;
-			
-			// aapt resource value: 0x7f0a00bc
-			public const int browser_actions_menu_view = 2131361980;
-			
-			// aapt resource value: 0x7f0a00b2
-			public const int button1 = 2131361970;
+			// aapt resource value: 0x7f0a00b5
+			public const int button1 = 2131361973;
 			
 			// aapt resource value: 0x7f0a0072
 			public const int buttonPanel = 2131361906;
@@ -3367,20 +3367,23 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a009e
 			public const int button_add_code = 2131361950;
 			
-			// aapt resource value: 0x7f0a00b9
-			public const int button_back = 2131361977;
+			// aapt resource value: 0x7f0a00bc
+			public const int button_back = 2131361980;
 			
 			// aapt resource value: 0x7f0a00aa
 			public const int button_edit_profile = 2131361962;
 			
+			// aapt resource value: 0x7f0a00b1
+			public const int button_insert_code = 2131361969;
+			
 			// aapt resource value: 0x7f0a00af
-			public const int button_insert_code = 2131361967;
+			public const int button_screenshot_add = 2131361967;
 			
-			// aapt resource value: 0x7f0a00b6
-			public const int button_sign_in = 2131361974;
+			// aapt resource value: 0x7f0a00b9
+			public const int button_sign_in = 2131361977;
 			
-			// aapt resource value: 0x7f0a00b7
-			public const int button_sign_up = 2131361975;
+			// aapt resource value: 0x7f0a00ba
+			public const int button_sign_up = 2131361978;
 			
 			// aapt resource value: 0x7f0a004c
 			public const int center = 2131361868;
@@ -3394,8 +3397,8 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a0086
 			public const int checkbox = 2131361926;
 			
-			// aapt resource value: 0x7f0a00d8
-			public const int chronometer = 2131362008;
+			// aapt resource value: 0x7f0a00db
+			public const int chronometer = 2131362011;
 			
 			// aapt resource value: 0x7f0a0061
 			public const int clip_horizontal = 2131361889;
@@ -3406,8 +3409,8 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a0040
 			public const int collapseActionView = 2131361856;
 			
-			// aapt resource value: 0x7f0a00c4
-			public const int container = 2131361988;
+			// aapt resource value: 0x7f0a00c7
+			public const int container = 2131361991;
 			
 			// aapt resource value: 0x7f0a0082
 			public const int content = 2131361922;
@@ -3415,8 +3418,8 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a0075
 			public const int contentPanel = 2131361909;
 			
-			// aapt resource value: 0x7f0a00c5
-			public const int coordinator = 2131361989;
+			// aapt resource value: 0x7f0a00c8
+			public const int coordinator = 2131361992;
 			
 			// aapt resource value: 0x7f0a007c
 			public const int custom = 2131361916;
@@ -3430,20 +3433,20 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a006f
 			public const int default_activity_button = 2131361903;
 			
-			// aapt resource value: 0x7f0a00c7
-			public const int design_bottom_sheet = 2131361991;
+			// aapt resource value: 0x7f0a00ca
+			public const int design_bottom_sheet = 2131361994;
+			
+			// aapt resource value: 0x7f0a00cf
+			public const int design_menu_item_action_area = 2131361999;
+			
+			// aapt resource value: 0x7f0a00ce
+			public const int design_menu_item_action_area_stub = 2131361998;
+			
+			// aapt resource value: 0x7f0a00cd
+			public const int design_menu_item_text = 2131361997;
 			
 			// aapt resource value: 0x7f0a00cc
-			public const int design_menu_item_action_area = 2131361996;
-			
-			// aapt resource value: 0x7f0a00cb
-			public const int design_menu_item_action_area_stub = 2131361995;
-			
-			// aapt resource value: 0x7f0a00ca
-			public const int design_menu_item_text = 2131361994;
-			
-			// aapt resource value: 0x7f0a00c9
-			public const int design_navigation_view = 2131361993;
+			public const int design_navigation_view = 2131361996;
 			
 			// aapt resource value: 0x7f0a0027
 			public const int disableHome = 2131361831;
@@ -3508,8 +3511,8 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a0067
 			public const int forever = 2131361895;
 			
-			// aapt resource value: 0x7f0a00bb
-			public const int frameLayout1 = 2131361979;
+			// aapt resource value: 0x7f0a00be
+			public const int frameLayout1 = 2131361982;
 			
 			// aapt resource value: 0x7f0a000a
 			public const int ghost_view = 2131361802;
@@ -3526,8 +3529,8 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a0071
 			public const int icon = 2131361905;
 			
-			// aapt resource value: 0x7f0a00db
-			public const int icon_group = 2131362011;
+			// aapt resource value: 0x7f0a00de
+			public const int icon_group = 2131362014;
 			
 			// aapt resource value: 0x7f0a0041
 			public const int ifRoom = 2131361857;
@@ -3535,11 +3538,17 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a006e
 			public const int image = 2131361902;
 			
-			// aapt resource value: 0x7f0a00b4
-			public const int imageView1 = 2131361972;
+			// aapt resource value: 0x7f0a00b7
+			public const int imageView1 = 2131361975;
 			
-			// aapt resource value: 0x7f0a00d4
-			public const int info = 2131362004;
+			// aapt resource value: 0x7f0a00b0
+			public const int imageView_screen = 2131361968;
+			
+			// aapt resource value: 0x7f0a00b4
+			public const int imageView_screenshot1 = 2131361972;
+			
+			// aapt resource value: 0x7f0a00d7
+			public const int info = 2131362007;
 			
 			// aapt resource value: 0x7f0a0068
 			public const int italic = 2131361896;
@@ -3550,8 +3559,8 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a004e
 			public const int labeled = 2131361870;
 			
-			// aapt resource value: 0x7f0a00c3
-			public const int largeLabel = 2131361987;
+			// aapt resource value: 0x7f0a00c6
+			public const int largeLabel = 2131361990;
 			
 			// aapt resource value: 0x7f0a0054
 			public const int left = 2131361876;
@@ -3565,23 +3574,23 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a00a1
 			public const int linearLayout1 = 2131361953;
 			
-			// aapt resource value: 0x7f0a00c1
-			public const int linearLayout2 = 2131361985;
+			// aapt resource value: 0x7f0a00c4
+			public const int linearLayout2 = 2131361988;
 			
-			// aapt resource value: 0x7f0a00b3
-			public const int linearLayout_scroll = 2131361971;
+			// aapt resource value: 0x7f0a00b6
+			public const int linearLayout_scroll = 2131361974;
 			
 			// aapt resource value: 0x7f0a0024
 			public const int listMode = 2131361828;
 			
-			// aapt resource value: 0x7f0a00b1
-			public const int listView1 = 2131361969;
+			// aapt resource value: 0x7f0a00b3
+			public const int listView1 = 2131361971;
 			
 			// aapt resource value: 0x7f0a0070
 			public const int list_item = 2131361904;
 			
-			// aapt resource value: 0x7f0a00dd
-			public const int masked = 2131362013;
+			// aapt resource value: 0x7f0a00e0
+			public const int masked = 2131362016;
 			
 			// aapt resource value: 0x7f0a009c
 			public const int message = 2131361948;
@@ -3601,8 +3610,8 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a002f
 			public const int multiply = 2131361839;
 			
-			// aapt resource value: 0x7f0a00c8
-			public const int navigation_header_container = 2131361992;
+			// aapt resource value: 0x7f0a00cb
+			public const int navigation_header_container = 2131361995;
 			
 			// aapt resource value: 0x7f0a0042
 			public const int never = 2131361858;
@@ -3613,14 +3622,14 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a0025
 			public const int normal = 2131361829;
 			
-			// aapt resource value: 0x7f0a00d6
-			public const int notification_background = 2131362006;
+			// aapt resource value: 0x7f0a00d9
+			public const int notification_background = 2131362009;
 			
-			// aapt resource value: 0x7f0a00d2
-			public const int notification_main_column = 2131362002;
+			// aapt resource value: 0x7f0a00d5
+			public const int notification_main_column = 2131362005;
 			
-			// aapt resource value: 0x7f0a00d1
-			public const int notification_main_column_container = 2131362001;
+			// aapt resource value: 0x7f0a00d4
+			public const int notification_main_column_container = 2131362004;
 			
 			// aapt resource value: 0x7f0a0060
 			public const int outline = 2131361888;
@@ -3649,11 +3658,11 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a0055
 			public const int right = 2131361877;
 			
-			// aapt resource value: 0x7f0a00d5
-			public const int right_icon = 2131362005;
+			// aapt resource value: 0x7f0a00d8
+			public const int right_icon = 2131362008;
 			
-			// aapt resource value: 0x7f0a00d3
-			public const int right_side = 2131362003;
+			// aapt resource value: 0x7f0a00d6
+			public const int right_side = 2131362006;
 			
 			// aapt resource value: 0x7f0a000c
 			public const int save_image_matrix = 2131361804;
@@ -3685,8 +3694,8 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a005d
 			public const int scrollable = 2131361885;
 			
-			// aapt resource value: 0x7f0a00b0
-			public const int searchView1 = 2131361968;
+			// aapt resource value: 0x7f0a00b2
+			public const int searchView1 = 2131361970;
 			
 			// aapt resource value: 0x7f0a0091
 			public const int search_badge = 2131361937;
@@ -3736,14 +3745,14 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a002c
 			public const int showTitle = 2131361836;
 			
-			// aapt resource value: 0x7f0a00b8
-			public const int sign_in_title = 2131361976;
+			// aapt resource value: 0x7f0a00bb
+			public const int sign_in_title = 2131361979;
 			
-			// aapt resource value: 0x7f0a00ba
-			public const int sign_up_title = 2131361978;
+			// aapt resource value: 0x7f0a00bd
+			public const int sign_up_title = 2131361981;
 			
-			// aapt resource value: 0x7f0a00c2
-			public const int smallLabel = 2131361986;
+			// aapt resource value: 0x7f0a00c5
+			public const int smallLabel = 2131361989;
 			
 			// aapt resource value: 0x7f0a0016
 			public const int snackbar_action = 2131361814;
@@ -3832,8 +3841,8 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a009d
 			public const int textView_account_title = 2131361949;
 			
-			// aapt resource value: 0x7f0a00cd
-			public const int text_input_password_toggle = 2131361997;
+			// aapt resource value: 0x7f0a00d0
+			public const int text_input_password_toggle = 2131362000;
 			
 			// aapt resource value: 0x7f0a0018
 			public const int textinput_counter = 2131361816;
@@ -3844,8 +3853,8 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a001a
 			public const int textinput_helper_text = 2131361818;
 			
-			// aapt resource value: 0x7f0a00d7
-			public const int time = 2131362007;
+			// aapt resource value: 0x7f0a00da
+			public const int time = 2131362010;
 			
 			// aapt resource value: 0x7f0a0023
 			public const int title = 2131361827;
@@ -3862,8 +3871,8 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a007d
 			public const int topPanel = 2131361917;
 			
-			// aapt resource value: 0x7f0a00c6
-			public const int touch_outside = 2131361990;
+			// aapt resource value: 0x7f0a00c9
+			public const int touch_outside = 2131361993;
 			
 			// aapt resource value: 0x7f0a000f
 			public const int transition_current_scene = 2131361807;
@@ -3895,8 +3904,8 @@ namespace CodeShare
 			// aapt resource value: 0x7f0a001b
 			public const int view_offset_helper = 2131361819;
 			
-			// aapt resource value: 0x7f0a00dc
-			public const int visible = 2131362012;
+			// aapt resource value: 0x7f0a00df
+			public const int visible = 2131362015;
 			
 			// aapt resource value: 0x7f0a0043
 			public const int withText = 2131361859;

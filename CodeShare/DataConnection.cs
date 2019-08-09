@@ -17,7 +17,7 @@ namespace CodeShare
            
         }
 
-        private static string _DatabaseName = "mydatabase.db2";
+        private static string _DatabaseName = "mydatabase.db4";
         public static string tableName = "User";
         public static string tableNameCode = "Code";
 
@@ -32,10 +32,10 @@ namespace CodeShare
 
         // Code Table Content and create query
 
-        public static string codeID = "id", titleValue = "title", linkValue = "link", discriptionValue = "discription";
+        public static string codeID = "id", titleValue = "title", linkValue = "link", discriptionValue = "discription", image_uri = "image";
 
-        public string createTableCode = string.Format("Create table {0} ({1} Integer Primary Key  Autoincrement, {2} text, {3} text, {4} text, {5} text);"
-            , tableNameCode, codeID, emailValue, titleValue, linkValue, discriptionValue);
+        public string createTableCode = string.Format("Create table {0} ({1} Integer Primary Key  Autoincrement, {2} text, {3} text, {4} text, {5} text, {6} text);"
+            , tableNameCode, codeID, emailValue, titleValue, linkValue, discriptionValue, image_uri);
 
 
         public string DeleteQueryCode = "DROP TABLE IF EXISTS " + tableNameCode;

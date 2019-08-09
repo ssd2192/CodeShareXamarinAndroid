@@ -13,7 +13,6 @@ color;obj\Debug\90\res\values\colors.xml
 color;obj\Debug\90\res\values\ic_launcher_background.xml
 EditText;obj\Debug\90\res\layout\activity_account_tab.xml
 EditText;obj\Debug\90\res\layout\activity_add_code.xml
-EditText;obj\Debug\90\res\layout\activity_code_view.xml
 EditText;obj\Debug\90\res\layout\activity_sign_in.xml
 EditText;obj\Debug\90\res\layout\activity_sign_up.xml
 external-cache-path;D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\lp\42\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
@@ -21,6 +20,8 @@ external-path;D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1
 foreground;obj\Debug\90\res\mipmap-anydpi-v26\ic_launcher.xml
 foreground;obj\Debug\90\res\mipmap-anydpi-v26\ic_launcher_round.xml
 FrameLayout;obj\Debug\90\res\layout\activity_tab.xml
+ImageView;obj\Debug\90\res\layout\activity_add_code.xml
+ImageView;obj\Debug\90\res\layout\activity_code_view.xml
 ImageView;obj\Debug\90\res\layout\activity_main.xml
 ImageView;obj\Debug\90\res\layout\activity_sign_in.xml
 ImageView;obj\Debug\90\res\layout\activity_sign_up.xml
@@ -42,7 +43,6 @@ resources;obj\Debug\90\res\values\strings.xml
 resources;obj\Debug\90\res\values\styles.xml
 ScrollView;obj\Debug\90\res\layout\activity_account_tab.xml
 ScrollView;obj\Debug\90\res\layout\activity_add_code.xml
-ScrollView;obj\Debug\90\res\layout\activity_code_view.xml
 ScrollView;obj\Debug\90\res\layout\activity_main.xml
 ScrollView;obj\Debug\90\res\layout\activity_sign_in.xml
 ScrollView;obj\Debug\90\res\layout\activity_sign_up.xml

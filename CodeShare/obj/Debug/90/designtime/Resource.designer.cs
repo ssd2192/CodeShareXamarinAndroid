@@ -3276,8 +3276,8 @@ namespace CodeShare
 			// aapt resource value: 0x7F0C0015
 			public const int alertTitle = 2131492885;
 			
-			// aapt resource value: 0x7F020026
-			public const int app_title = 2130837542;
+			// aapt resource value: 0x7F020029
+			public const int app_title = 2130837545;
 			
 			// aapt resource value: 0x7F0C0006
 			public const int async = 2131492870;
@@ -3306,8 +3306,8 @@ namespace CodeShare
 			// aapt resource value: 0x7F0C000D
 			public const int browser_actions_menu_view = 2131492877;
 			
-			// aapt resource value: 0x7F020023
-			public const int button1 = 2130837539;
+			// aapt resource value: 0x7F020026
+			public const int button1 = 2130837542;
 			
 			// aapt resource value: 0x7F0C001A
 			public const int buttonPanel = 2131492890;
@@ -3315,20 +3315,23 @@ namespace CodeShare
 			// aapt resource value: 0x7F020003
 			public const int button_add_code = 2130837507;
 			
-			// aapt resource value: 0x7F020030
-			public const int button_back = 2130837552;
+			// aapt resource value: 0x7F020033
+			public const int button_back = 2130837555;
 			
 			// aapt resource value: 0x7F020015
 			public const int button_edit_profile = 2130837525;
 			
+			// aapt resource value: 0x7F020022
+			public const int button_insert_code = 2130837538;
+			
 			// aapt resource value: 0x7F020020
-			public const int button_insert_code = 2130837536;
+			public const int button_screenshot_add = 2130837536;
 			
-			// aapt resource value: 0x7F020027
-			public const int button_sign_in = 2130837543;
+			// aapt resource value: 0x7F020030
+			public const int button_sign_in = 2130837552;
 			
-			// aapt resource value: 0x7F020028
-			public const int button_sign_up = 2130837544;
+			// aapt resource value: 0x7F020031
+			public const int button_sign_up = 2130837553;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int center = 2131492891;
@@ -3423,8 +3426,8 @@ namespace CodeShare
 			// aapt resource value: 0x7F0C0009
 			public const int forever = 2131492873;
 			
-			// aapt resource value: 0x7F020032
-			public const int frameLayout1 = 2130837554;
+			// aapt resource value: 0x7F020035
+			public const int frameLayout1 = 2130837557;
 			
 			// aapt resource value: 0x7F0C0033
 			public const int ghost_view = 2131492915;
@@ -3444,8 +3447,14 @@ namespace CodeShare
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
+			// aapt resource value: 0x7F020028
+			public const int imageView1 = 2130837544;
+			
+			// aapt resource value: 0x7F020021
+			public const int imageView_screen = 2130837537;
+			
 			// aapt resource value: 0x7F020025
-			public const int imageView1 = 2130837541;
+			public const int imageView_screenshot1 = 2130837541;
 			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
@@ -3474,17 +3483,17 @@ namespace CodeShare
 			// aapt resource value: 0x7F020006
 			public const int linearLayout1 = 2130837510;
 			
-			// aapt resource value: 0x7F020033
-			public const int linearLayout2 = 2130837555;
+			// aapt resource value: 0x7F020036
+			public const int linearLayout2 = 2130837558;
 			
-			// aapt resource value: 0x7F020024
-			public const int linearLayout_scroll = 2130837540;
+			// aapt resource value: 0x7F020027
+			public const int linearLayout_scroll = 2130837543;
 			
 			// aapt resource value: 0x7F0C0041
 			public const int listMode = 2131492929;
 			
-			// aapt resource value: 0x7F020022
-			public const int listView1 = 2130837538;
+			// aapt resource value: 0x7F020024
+			public const int listView1 = 2130837540;
 			
 			// aapt resource value: 0x7F0C0042
 			public const int list_item = 2131492930;
@@ -3585,8 +3594,8 @@ namespace CodeShare
 			// aapt resource value: 0x7F020005
 			public const int scrollView1 = 2130837509;
 			
-			// aapt resource value: 0x7F020021
-			public const int searchView1 = 2130837537;
+			// aapt resource value: 0x7F020023
+			public const int searchView1 = 2130837539;
 			
 			// aapt resource value: 0x7F0C0062
 			public const int search_badge = 2131492962;
@@ -3627,11 +3636,11 @@ namespace CodeShare
 			// aapt resource value: 0x7F0C006E
 			public const int shortcut = 2131492974;
 			
-			// aapt resource value: 0x7F020029
-			public const int sign_in_title = 2130837545;
+			// aapt resource value: 0x7F020032
+			public const int sign_in_title = 2130837554;
 			
-			// aapt resource value: 0x7F020031
-			public const int sign_up_title = 2130837553;
+			// aapt resource value: 0x7F020034
+			public const int sign_up_title = 2130837556;
 			
 			// aapt resource value: 0x7F0C006F
 			public const int smallLabel = 2131492975;

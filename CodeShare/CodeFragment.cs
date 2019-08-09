@@ -36,9 +36,12 @@ namespace CodeShare
         public static string codelink = "link";
         public static string codeDesc = "discription";
         public static string codeID = "id";
+        public static string codeImage = "image";
+
+        Android.Net.Uri uri;
 
         string code_title, code_link, code_desc = "";
-        string code_id = "";
+        string code_id = "", code_image = "";
 
 
 
@@ -86,6 +89,7 @@ namespace CodeShare
                 code_title = myresult.GetString(myresult.GetColumnIndexOrThrow(codeTitle));
                 code_link = myresult.GetString(myresult.GetColumnIndexOrThrow(codelink));
                 code_desc = myresult.GetString(myresult.GetColumnIndexOrThrow(codeDesc));
+                code_image = myresult.GetString(myresult.GetColumnIndexOrThrow(codeImage));
 
                 listCode.Add(myresult.GetString(myresult.GetColumnIndexOrThrow(codeTitle)));
 
@@ -96,18 +100,13 @@ namespace CodeShare
             myList.ItemClick += MyList_ItemClick;
             mySearch.QueryTextChange += MySearch_QueryTextChange;
 
-            Console.WriteLine("Code Id from Database " + code_id);
+            Console.WriteLine("Code Image from Database ************* " + code_image);
+            // Uri converted
+             uri = Android.Net.Uri.Parse(Android.Net.Uri.Decode( code_image));
+
+            Console.WriteLine("*********** URI CF" + uri);
+
             return myView;
-
-
-
-            
-
-
-            // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-
-            //return base.OnCreateView(inflater, container, savedInstanceState);
-
 
         }
 
@@ -130,13 +129,18 @@ namespace CodeShare
         {
             var index = e.Position;
             code_title = (string)listCode[index];
-
+            
+           // Android.Net.Uri uri = Android.Net.Uri.Parse(code_image);
             Intent newScreen = new Intent(this.Activity, typeof(CodeViewActivity));
             newScreen.PutExtra("code_id", code_id);
             newScreen.PutExtra("email", email);
             newScreen.PutExtra("code_title", code_title);
             newScreen.PutExtra("code_link", code_link);
             newScreen.PutExtra("code_desc", code_desc);
+            //newScreen.PutExtra("code_image", uri);
+            //newScreen.SetData(uri);
+            //newScreen.PutExtra(Intent.ExtraStream, code_image);
+            newScreen.PutExtra("code_image", code_image);
             StartActivity(newScreen);
 
 

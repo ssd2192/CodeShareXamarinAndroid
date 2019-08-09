@@ -68,8 +68,8 @@ namespace CodeShare
         {
             Android.App.ActionBar.Tab tab = ActionBar.NewTab();
             tab.SetText(tabTitle);
-
-            tab.SetIcon(Android.Resource.Drawable.IcInputAdd);
+            
+           // tab.SetIcon(Android.Resource.Drawable.IcInputAdd);
 
             tab.TabSelected += TabOnTabSelected;
 
