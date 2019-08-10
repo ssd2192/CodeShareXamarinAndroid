@@ -2,6 +2,9 @@ D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\Cod
 D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\assets\Java.Interop.dll
 D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\assets\Mono.Android.dll
 D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\assets\mscorlib.dll
+D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\assets\Plugin.CurrentActivity.dll
+D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\assets\Plugin.Media.dll
+D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\assets\Plugin.Permissions.dll
 D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\assets\SQLite-net.dll
 D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\assets\SQLitePCLRaw.batteries_green.dll
 D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\assets\SQLitePCLRaw.batteries_v2.dll

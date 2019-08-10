@@ -25,7 +25,7 @@ namespace CodeShare
             alert.SetTitle(title);
             alert.SetMessage(message);
 
-            if (title == "Error" || title == "Update" || title == "Code Added Successfull")
+            if (title == "Error" || title == "Update" || title == "Code Added Successfull" || title == "Added To Favourite")
             {
                 alert.SetPositiveButton("OK", alertOKButton);
             }

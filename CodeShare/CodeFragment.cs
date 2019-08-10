@@ -41,7 +41,7 @@ namespace CodeShare
         Android.Net.Uri uri;
 
         string code_title, code_link, code_desc = "";
-        string code_id = "", code_image = "";
+        static string code_id = "", code_image = "";
 
 
 
@@ -71,8 +71,6 @@ namespace CodeShare
 
             myView.FindViewById<TextView>(Resource.Id.textView1).Text = myName;
 
-           // mytext.Text = "Code List";
-            //myList.Adapter = new ArrayAdapter(myContext, Android.Resource.Layout.SimpleListItem1, movieArray);
 
             // Code to display Code List
             
@@ -90,6 +88,7 @@ namespace CodeShare
                 code_link = myresult.GetString(myresult.GetColumnIndexOrThrow(codelink));
                 code_desc = myresult.GetString(myresult.GetColumnIndexOrThrow(codeDesc));
                 code_image = myresult.GetString(myresult.GetColumnIndexOrThrow(codeImage));
+                string email = myresult.GetString(myresult.GetColumnIndexOrThrow("email"));
 
                 listCode.Add(myresult.GetString(myresult.GetColumnIndexOrThrow(codeTitle)));
 
@@ -100,11 +99,11 @@ namespace CodeShare
             myList.ItemClick += MyList_ItemClick;
             mySearch.QueryTextChange += MySearch_QueryTextChange;
 
-            Console.WriteLine("Code Image from Database ************* " + code_image);
-            // Uri converted
-             uri = Android.Net.Uri.Parse(Android.Net.Uri.Decode( code_image));
+            //Console.WriteLine("Code Image from Database ************* " + code_image);
+            //// Uri converted
+            // uri = Android.Net.Uri.Parse(Android.Net.Uri.Decode( code_image));
 
-            Console.WriteLine("*********** URI CF" + uri);
+            //Console.WriteLine("*********** URI CF" + uri);
 
             return myView;
 
@@ -137,15 +136,8 @@ namespace CodeShare
             newScreen.PutExtra("code_title", code_title);
             newScreen.PutExtra("code_link", code_link);
             newScreen.PutExtra("code_desc", code_desc);
-            //newScreen.PutExtra("code_image", uri);
-            //newScreen.SetData(uri);
-            //newScreen.PutExtra(Intent.ExtraStream, code_image);
             newScreen.PutExtra("code_image", code_image);
             StartActivity(newScreen);
-
-
-
-
 
 
         }

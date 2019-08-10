@@ -48,7 +48,7 @@ namespace CodeShare
             _fragmentsArray = new Fragment[]
          {
             new CodeFragment(emailFromSignIn),
-            new MyCodeFragment(),
+            new MyCodeFragment(emailFromSignIn),
             new AccountFragment(emailFromSignIn,passwordFromSignIn,nameFromSignIn,ageFsromSignIn)
          };
 

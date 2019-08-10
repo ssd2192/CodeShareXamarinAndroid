@@ -20,7 +20,8 @@ namespace CodeShare
 
 
         public static string tableNameCode = "Code";
-       
+        public static string tableNameCodeFav = "CodeFav";
+
         // Code Table Content and crete query
 
         //public static string emailValue="email", titleValue = "title", linkValue = "link", discriptionValue = "discription", image_uri = "image";
@@ -77,8 +78,6 @@ namespace CodeShare
 
 
 
-
-
         //Print All Code List
         public ICursor PrintCodeList(Context context)
         {
@@ -89,8 +88,37 @@ namespace CodeShare
 
             return myresult;
         }
+        string emailValue = "email";
+
+
+
+        // CodeFav Table Queries
+
+        public void insertValueFav(Context context, string emailValue, string titleValue, string linkValue, string discriptionValue, string image_uri)
+        {
+            connectionObj = new DataConnection(context).ReadableDatabase;
+            string insertStm = string.Format("Insert into {0} ( email, title, link, discription, image ) values ( '{1}', '{2}', '{3}', '{4}', '{5}');"
+            , tableNameCodeFav, emailValue, titleValue, linkValue, discriptionValue, image_uri);
+
+            Console.WriteLine("My SQL  Insert STM \n  \n" + insertStm);
+
+            connectionObj.ExecSQL(insertStm);
+
+        }
+
+
+        public ICursor PrintCodeListMyCodeFav(Context context, string myemail)
+        {
+            connectionObj = new DataConnection(context).ReadableDatabase;
+            string selectCodeStm = string.Format("Select * from {0} where {1} = '{2}' ", tableNameCodeFav, emailValue, myemail);
+
+            ICursor myresult = connectionObj.RawQuery(selectCodeStm, null);
+
+            return myresult;
+        }
 
         //print image
+
         string codeID = "id";
         public ICursor PrintCodeListImage(Context context, int codeId)
         {

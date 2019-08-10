@@ -3306,9 +3306,6 @@ namespace CodeShare
 			// aapt resource value: 0x7F0C000D
 			public const int browser_actions_menu_view = 2131492877;
 			
-			// aapt resource value: 0x7F020026
-			public const int button1 = 2130837542;
-			
 			// aapt resource value: 0x7F0C001A
 			public const int buttonPanel = 2131492890;
 			
@@ -3320,6 +3317,9 @@ namespace CodeShare
 			
 			// aapt resource value: 0x7F020015
 			public const int button_edit_profile = 2130837525;
+			
+			// aapt resource value: 0x7F020026
+			public const int button_fav = 2130837542;
 			
 			// aapt resource value: 0x7F020022
 			public const int button_insert_code = 2130837538;
@@ -3985,13 +3985,16 @@ namespace CodeShare
 			public const int activity_main = 2130903046;
 			
 			// aapt resource value: 0x7F030007
-			public const int activity_sign_in = 2130903047;
+			public const int activity_mycode_tab = 2130903047;
 			
 			// aapt resource value: 0x7F030008
-			public const int activity_sign_up = 2130903048;
+			public const int activity_sign_in = 2130903048;
 			
 			// aapt resource value: 0x7F030009
-			public const int activity_tab = 2130903049;
+			public const int activity_sign_up = 2130903049;
+			
+			// aapt resource value: 0x7F030010
+			public const int activity_tab = 2130903056;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int browser_actions_context_menu_page = 2131689473;
@@ -3999,8 +4002,8 @@ namespace CodeShare
 			// aapt resource value: 0x7F0F0002
 			public const int browser_actions_context_menu_row = 2131689474;
 			
-			// aapt resource value: 0x7F030010
-			public const int CellLayout = 2130903056;
+			// aapt resource value: 0x7F030011
+			public const int CellLayout = 2130903057;
 			
 			// aapt resource value: 0x7F0F001D
 			public const int design_bottom_navigation_item = 2131689501;

@@ -333,3 +333,13 @@ D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\Cod
 D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\CodeShare.csprojAssemblyReference.cache
+D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\linksrc\Plugin.CurrentActivity.dll
+D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\linksrc\Plugin.Media.dll
+D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\linksrc\Plugin.Permissions.dll
+D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\assets\Plugin.CurrentActivity.dll
+D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\assets\Plugin.Media.dll
+D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\assets\Plugin.Permissions.dll
+D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\src\md52784b6b6564df579ab09ba8bad5c54dd\ActivityLifecycleContextListener.java
+D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\android\src\md54cd65ac53ae710bff80022afc423e0f3\MediaPickerActivity.java
+D:\MobileDevelopment\MobileProject\AndroidProject\CodeShare\Build1\CodeShare\CodeShare\CodeShare\obj\Debug\90\res\layout\activity_mycode_tab.xml

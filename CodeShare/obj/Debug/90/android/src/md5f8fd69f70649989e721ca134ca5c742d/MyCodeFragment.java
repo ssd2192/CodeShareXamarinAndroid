@@ -24,6 +24,13 @@ public class MyCodeFragment
 			mono.android.TypeManager.Activate ("CodeShare.MyCodeFragment, CodeShare", "", this, new java.lang.Object[] {  });
 	}
 
+	public MyCodeFragment (java.lang.String p0)
+	{
+		super ();
+		if (getClass () == MyCodeFragment.class)
+			mono.android.TypeManager.Activate ("CodeShare.MyCodeFragment, CodeShare", "System.String, mscorlib", this, new java.lang.Object[] { p0 });
+	}
+
 
 	public void onCreate (android.os.Bundle p0)
 	{
