@@ -7,7 +7,7 @@
 </table>
  
 # CodeShare
-CodeShare is an android appliation used to share the Code, Project, Snippets, Project Documentation, Screenshots, etc. with other users.
+CodeShare is an android application used to share the Code, Project, Snippets, Project Documentation, Screenshots, etc. with other users.
 
 ## Prerequisites
 #### Mac
